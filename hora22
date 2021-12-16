@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+<title>Hora do dia.com</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+</head>
+
+<style>
+
+body{background-color:rgba(0, 0, 255, 0.493);
+     font:normal 15pt Arial; }
+
+header{color:white; }
+
+section{background-color:white;
+        border-radius:10px;
+        padding:15px;
+        width:500px;
+        margin:auto;
+        box-shadow:5px 5px 10px black; }
+
+.img_a{border-radius:170px; }
+
+footer{color:white; 
+       font-style:italic; }
+
+.div_color_a{color:black;
+             font-size:28px;
+             font-family:sans-serif; }
+
+
+
+</style>
+
+<body onload="carregar()">
+
+<center>
+
+<pre>
+
+<header>
+
+<h1>Hora do dia</h1>
+
+</head>
+
+<section>
+
+<div class="div_color_a" id="div_a">
+
+
+
+</div>
+
+<div id="div_b">
+
+<img id="a" class="img_a" src="https://images3.alphacoders.com/611/611971.jpg" width="280px" height="270px">
+
+<img id="b" class="img_a" src="C:\Users\POSITIVO\Documents\projetos html\estudo jsscript\exercicios javascript\tarde.jpg" width="280px" height="270px">
+
+<img id="c" class="img_a" src="https://images2.alphacoders.com/712/712462.jpg" width="280px" height="270px">
+
+
+</div>
+
+</section>
+
+<footer>
+
+<p>&copy: javascript</p>
+
+</footer>
+
+</header>
+
+<script>
+
+function carregar(){
+
+var div_a=document.getElementById("div_a");
+var imagem=document.getElementById("imagem");
+var b=document.getElementById("b");
+var c=document.getElementById("c");
+var data= new Date()
+//var hora= data.getHours()
+ var hora=9
+
+div_a.innerHTML=`Agora são ${hora} horas.`
+
+if(hora >= 0 && hora < 12){
+
+	// bom dia 
+
+	img.src='manhã.jpg'
+
+
+}else if(hora >= 12 && hora <= 16){
+
+    // boa tarde
+
+    img.src='tarde.jpg'
+}else if(hora >= 17 && hora <= 00){
+
+
+   // boa noite
+
+    img.src='noite.jpg'
+
+}
+
+}
+
+</script>
+
+</pre>
+
+</center>
+
+</body>
+
+</html>
