@@ -8,7 +8,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 OLá Veja as as cores em html
 
-```markdown
+```Cor
 Syntax highlighted code block
 
 # Header 1
